@@ -9,10 +9,10 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/is-even",
-        "tsConfig": "is-even/tsconfig.lib.json",
-        "packageJson": "is-even/package.json",
-        "main": "is-even/src/index.ts",
-        "assets": ["is-even/*.md"]
+        "tsConfig": "lib/is-even/tsconfig.lib.json",
+        "packageJson": "lib/is-even/package.json",
+        "main": "lib/is-even/src/index.ts",
+        "assets": ["lib/is-even/*.md"]
       }
     },
     "lint": {
