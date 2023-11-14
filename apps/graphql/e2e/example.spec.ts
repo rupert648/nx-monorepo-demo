@@ -1,8 +1,12 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, request } from '@playwright/test';
 
-test('has title', async ({ page }) => {
-  await page.goto('/');
-
-  // Expect h1 to contain a substring.
-  expect(await page.locator('h1').innerText()).toContain('Welcome');
+test('has title', async () => {
+  const api = await request.newContext();
+  const result = await api.get('http://localhost:3000');
+  const body = await result.json();
+  console.log(body);
+  expect(body).toEqual({
+    message: 'Hello API',
+    result: false
+  });
 });

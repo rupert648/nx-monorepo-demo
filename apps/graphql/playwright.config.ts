@@ -25,7 +25,7 @@ export default defineConfig({
   },
   webServer: {
     command: 'npx nx run graphql:serve:development',
-    url: 'http://localhost:3333/api',
+    url: 'http://localhost:3000',
     reuseExistingServer: !process.env.CI,
     cwd: workspaceRoot,
   },

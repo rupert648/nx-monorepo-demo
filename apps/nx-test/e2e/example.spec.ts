@@ -8,6 +8,6 @@ test('has title', async () => {
   // Expect h1 to contain a substring.
   expect(body).toEqual({
     message: 'Welcome to nx-test!',
-    result: 2
+    result: true
   });
 });
