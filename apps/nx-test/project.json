@@ -51,6 +51,13 @@
       "options": {
         "jestConfig": "apps/nx-test/jest.config.ts"
       }
+    },
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "outputs": ["{workspaceRoot}/dist/.playwright/apps/nx-test"],
+      "options": {
+        "config": "apps/nx-test/playwright.config.ts"
+      }
     }
   },
   "tags": []
