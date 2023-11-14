@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-test/auth": ["auth/src/index.ts"]
+      "@nx-test/auth": ["lib/auth/src/index.ts"],
+      "@nx-test/is-even": ["lib/is-even/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

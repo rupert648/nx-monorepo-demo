@@ -6,5 +6,8 @@ test('has title', async () => {
   const body = await result.json();
   console.log(body);
   // Expect h1 to contain a substring.
-  expect(body.message).toEqual('Welcome to nx-test!');
+  expect(body).toEqual({
+    message: 'Welcome to nx-test!',
+    result: 'auth'
+  });
 });
