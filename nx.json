@@ -16,7 +16,7 @@
       ]
     },
     "e2e": {
-      "cache": true,
+      "cache": false,
       "inputs": ["default", "^production"]
     },
     "@nx/jest:jest": {
